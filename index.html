@@ -4,16 +4,29 @@
   <style>
     body {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
     }
 
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
     .video-container {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       margin: 0 10px;
+      margin-top: 30px;
+    }
+
+    .video-title {
+      font-size: 18px;
+      margin-bottom: 10px;
     }
 
     video {
@@ -23,14 +36,19 @@
   </style>
 </head>
 <body>
+  <h1>Advanced Topics in Control Project</h1>
+
   <div class="video-container">
-    <video controls>
-      <source src="assets/man_walking_w_ff.mp4" type="video/mp4">
+    <h2 class="video-title">With Feed Forward</h2>
+    <video controls autoplay loop>
+      <source src="man_walking_w_ff/vid1.mp4" type="video/mp4">
     </video>
   </div>
+
   <div class="video-container">
-    <video controls>
-      <source src="assets/man_walking_wo_ff.mp4" type="video/mp4">
+    <h2 class="video-title">Without Feed Forward</h2>
+    <video controls autoplay loop>
+      <source src="man_walking_wo_ff/vid2.mp4" type="video/mp4">
     </video>
   </div>
 </body>
