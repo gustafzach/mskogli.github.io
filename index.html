@@ -1,1 +1,38 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Side-by-Side Videos</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 10px;
+    }
+
+    video {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-container">
+    <video controls>
+      <source src="assets/man_walking_w_ff.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="video-container">
+    <video controls>
+      <source src="assets/man_walking_wo_ff.mp4" type="video/mp4">
+    </video>
+  </div>
+</body>
+</html>
