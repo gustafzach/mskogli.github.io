@@ -17,7 +17,7 @@
 
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr); /* Modified to accommodate the fifth video */
       grid-gap: 20px;
     }
 
@@ -37,10 +37,18 @@
       max-width: 100%;
       height: auto;
     }
+    
+    .authors-container {
+      margin-top: 40px;
+    }
+
+    .author {
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
-  <h1>ETH - Advanced Topics in Control Project</h1>
+  <h1>ETH Zürich - 227-0690-12L Advanced Topics in Control Project</h1>
 
   <div class="grid-container">
     <div class="video-container">
@@ -66,6 +74,33 @@
       <video controls autoplay loop onloadstart="this.playbackRate = 0.2">
         <source src="assets/man_walking_w_ff.mp4" type="video/mp4">
       </video>
+    </div>
+    <div class="video-container">
+      <h2 class="video-title">Original Walking man</h2>
+      <video controls autoplay loop onloadstart="this.playbackRate = 0.2">
+       <source src="assets/man_walking.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <!-- Authors Section -->
+  <div class="authors-container">
+    <h2>Authors</h2>
+    <div class="author">
+      <h3>Lisa Blaser</h3>
+      <p>Norwegian University of Science and Technology</p>
+    </div>
+    <div class="author">
+      <h3>Lars Rønhaug Pettersen</h3>
+      <p>Norwegian University of Science and Technology</p>
+    </div>
+    <div class="author">
+      <h3>Mathias Skogli</h3>
+      <p>Norwegian University of Science and Technology</p>
+    </div>
+    <div class="author">
+      <h3>Gustaf Zachrisson</h3>
+      <p>KTH Royal Institute of Technology</p>
     </div>
   </div>
 </body>
